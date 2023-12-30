@@ -1,7 +1,19 @@
+/* 
+
+Author: Sakib MD Nazmush
+Author URI: sakibsnaz.vercel.app
+Description: Just a simple langing page for a product using HTML, CSS and JavaScript animation library GSAP.
+Date: December 30, 2023
+
+*/
+
+/* Font family */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* html and body */
+html,
 body {
   margin: 0;
   padding: 0;
-  background: blueviolet;
   font-family: "Poppins", sans-serif;
 }
