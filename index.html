@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Landing Page</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animated Landing Page</title>
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- icons -->
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <!-- icons -->
+        <script
+            src="https://kit.fontawesome.com/697c0af9d0.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- stripes -->
+        <div class="stripes">
+            <div class="container">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+            </div>
+        </div>
 
-</head>
-<body>
-    <!-- nav -->
-    <!-- main -->
-    <main>
-        <h1>Hello</h1>
-    </main>
-    
-    <!-- script -->
-    <script src="js/script.js"></script>
-</body>
+        <!-- nav -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">AMG G63</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">specifications</a></li>
+                        <li><a href="#">warranty</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="toggle">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main>
+            <div class="container">
+                <div class="img">
+                    <img src="images/car.png" alt="Mercedes AMG G63 SUV" />
+                </div>
+                <div class="heading">
+                    <p>mercedes</p>
+                    <h1>amg g 63 suv</h1>
+                </div>
+                <div class="btn">
+                    <button>Order Now</button>
+                </div>
+                <div class="year">
+                    <p>2023*</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- side social icons -->
+        <div class="social">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- script -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
