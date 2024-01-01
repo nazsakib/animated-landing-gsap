@@ -1,10 +1,8 @@
 /* 
-
 Author: Sakib MD Nazmush
 Author URI: sakibsnaz.vercel.app
-Description: Just a simple langing page for a product using HTML, CSS and JavaScript animation library GSAP.
+Description: Just a simple landing page for a product using HTML, SCSS, and JavaScript animation library GSAP.
 Date: December 30, 2023
-
 */
 
 /* Font family */
@@ -55,57 +53,61 @@ a {
 }
 
 /* nav */
-
 .menubar {
     display: flex;
     align-items: center;
-}
-.logo {
-    width: 10%;
-    overflow: hidden;
-}
-.logo a {
-    font-weight: bold;
-    font-size: large;
-    text-transform: uppercase;
-}
-.menu {
-    width: 80%;
-    overflow: hidden;
-    text-align: right;
-}
-.menu ul li {
-    display: inline-block;
-    padding: 10px;
-}
-.menu ul li a {
-    font-weight: 500;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 1.3px;
-    font-size: 14px;
-}
-.menu ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: red;
-    transition: width 0.4s;
-}
-.menu ul li a:hover::after {
-    width: 100%;
-}
-.search ul li {
-    display: inline-block;
-    padding: 5px;
+
+    .logo {
+        width: 10%;
+        overflow: hidden;
+        a {
+            font-weight: bold;
+            font-size: large;
+            text-transform: uppercase;
+        }
+    }
+
+    .menu {
+        width: 80%;
+        overflow: hidden;
+        text-align: right;
+
+        ul li {
+            display: inline-block;
+            padding: 10px;
+
+            a {
+                font-weight: 500;
+                text-transform: uppercase;
+                position: relative;
+                letter-spacing: 1.3px;
+                font-size: 14px;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: red;
+                    transition: width 0.4s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .search ul li {
+        display: inline-block;
+        padding: 5px;
+    }
 }
 
 /* main */
-
 .img img {
     position: relative;
     top: 30px;
@@ -117,62 +119,70 @@ a {
     position: absolute;
     left: 48%;
     top: 280px;
-}
-.heading p {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: 25px;
-}
-.heading h1 {
-    text-transform: uppercase;
-    font-size: 100px;
-    font-weight: 500;
-    margin-top: -45px;
-    letter-spacing: -7px;
+
+    p {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 25px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 100px;
+        font-weight: 500;
+        margin-top: -45px;
+        letter-spacing: -7px;
+    }
 }
 .btn {
     position: fixed;
     top: 480px;
     left: 48%;
-}
-.btn a {
-    position: relative;
-    text-transform: uppercase;
-    background: #a90101;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: 0.4s;
-    letter-spacing: 1.5px;
-}
-.btn a:hover {
-    background: #000;
-    color: #fff;
+
+    a {
+        position: relative;
+        text-transform: uppercase;
+        background: #a90101;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: 0.4s;
+        letter-spacing: 1.5px;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
 }
 .year {
     position: fixed;
     bottom: 70px;
-}
-.year p {
-    font-weight: bold;
-    letter-spacing: 3px;
+
+    p {
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
 }
 
 /* social */
 .social {
     text-align: right;
-}
-.social ul {
-    position: fixed;
-    right: 10%;
-    bottom: 70px;
-    padding: 5px 0;
-}
-.social ul li {
-    font-size: 18px;
-    margin: 24px 0;
-    transition: 0.4s;
-}
-.social ul li:hover {
-    transform: scale(1.9);
+
+    ul {
+        position: fixed;
+        right: 10%;
+        bottom: 70px;
+        padding: 5px 0;
+
+        li {
+            font-size: 18px;
+            margin: 24px 0;
+            transition: 0.4s;
+
+            &:hover {
+                transform: scale(1.9);
+            }
+        }
+    }
 }
